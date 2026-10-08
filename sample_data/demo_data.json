@@ -1,0 +1,58 @@
+{
+  "_note": "Illustrative demo dataset. Total Orders (18,530) and Active Customers (4,337) match the real MongoDB collection counts documented in the project report. Total Revenue and AOV are estimated from the report's published monthly Average Order Value range (£442-£557). Customer/Invoice search records below are synthetic placeholders for demo purposes only.",
+
+  "kpis": {
+    "total_orders": 18530,
+    "active_customers": 4337,
+    "avg_order_value": 495.30,
+    "total_revenue_estimated": 9178911.90
+  },
+
+  "geographic_distribution": [
+    {"country": "United Kingdom", "transactions": 495478, "share_pct": 91.43},
+    {"country": "Germany", "transactions": 9495, "share_pct": 1.75},
+    {"country": "France", "transactions": 8558, "share_pct": 1.58},
+    {"country": "EIRE", "transactions": 8196, "share_pct": 1.51},
+    {"country": "Spain", "transactions": 2533, "share_pct": 0.47},
+    {"country": "Netherlands", "transactions": 2371, "share_pct": 0.44},
+    {"country": "Belgium", "transactions": 2069, "share_pct": 0.38},
+    {"country": "Switzerland", "transactions": 2002, "share_pct": 0.37},
+    {"country": "Portugal", "transactions": 1519, "share_pct": 0.28},
+    {"country": "Australia", "transactions": 1259, "share_pct": 0.23}
+  ],
+
+  "top_products": [
+    {"rank": 1, "stock_code": "84077", "description": "WORLD WAR 2 GLIDERS", "quantity_sold": 54319},
+    {"rank": 2, "stock_code": "85099B", "description": "JUMBO BAG RED RETROSPOT", "quantity_sold": 46078},
+    {"rank": 3, "stock_code": "85123A", "description": "WHITE HANGING HEART T-LIGHT HOLDER", "quantity_sold": 36706},
+    {"rank": 4, "stock_code": "84879", "description": "ASSORTED COLOUR BIRD ORNAMENT", "quantity_sold": 35263},
+    {"rank": 5, "stock_code": "21212", "description": "PACK OF 72 RETROSPOT CAKE CASES", "quantity_sold": 33670},
+    {"rank": 6, "stock_code": "22197", "description": "POPCORN HOLDER", "quantity_sold": 30919},
+    {"rank": 7, "stock_code": "23084", "description": "RABBIT NIGHT LIGHT", "quantity_sold": 27153},
+    {"rank": 8, "stock_code": "22492", "description": "MINI PAINT SET VINTAGE", "quantity_sold": 26076},
+    {"rank": 9, "stock_code": "22616", "description": "PACK OF 12 LONDON TISSUES", "quantity_sold": 25329},
+    {"rank": 10, "stock_code": "21977", "description": "PACK OF 60 PINK PAISLEY CAKE CASES", "quantity_sold": 24230}
+  ],
+
+  "monthly_revenue": [
+    {"year_month": "2010-12", "month_name": "December", "total_orders": 1400, "total_revenue": 619080.25, "avg_order_value": 442.20},
+    {"year_month": "2011-01", "month_name": "January", "total_orders": 986, "total_revenue": 548973.99, "avg_order_value": 556.77},
+    {"year_month": "2011-02", "month_name": "February", "total_orders": 997, "total_revenue": 482539.63, "avg_order_value": 483.99},
+    {"year_month": "2011-03", "month_name": "March", "total_orders": 1321, "total_revenue": 639506.29, "avg_order_value": 484.11}
+  ],
+
+  "sample_customers": [
+    {"customer_id": "DEMO-17850", "country": "United Kingdom", "total_orders": 34, "total_revenue": 5391.21, "average_order_value": 158.56, "recency_days": 12, "frequency": 34},
+    {"customer_id": "DEMO-13047", "country": "United Kingdom", "total_orders": 21, "total_revenue": 3079.10, "average_order_value": 146.62, "recency_days": 45, "frequency": 21},
+    {"customer_id": "DEMO-12583", "country": "France", "total_orders": 12, "total_revenue": 2807.45, "average_order_value": 233.95, "recency_days": 8, "frequency": 12},
+    {"customer_id": "DEMO-14606", "country": "United Kingdom", "total_orders": 128, "total_revenue": 12420.34, "average_order_value": 97.03, "recency_days": 3, "frequency": 128},
+    {"customer_id": "DEMO-15311", "country": "United Kingdom", "total_orders": 91, "total_revenue": 8412.55, "average_order_value": 92.45, "recency_days": 6, "frequency": 91}
+  ],
+
+  "sample_invoices": [
+    {"invoice_id": "DEMO-536365", "customer_id": "DEMO-17850", "country": "United Kingdom", "invoice_date": "2010-12-01 08:26:00", "total_items": 7, "total_revenue": 139.12, "has_returns": false},
+    {"invoice_id": "DEMO-536366", "customer_id": "DEMO-17850", "country": "United Kingdom", "invoice_date": "2010-12-01 08:28:00", "total_items": 2, "total_revenue": 22.20, "has_returns": false},
+    {"invoice_id": "DEMO-C536379", "customer_id": "DEMO-14527", "country": "United Kingdom", "invoice_date": "2010-12-01 09:41:00", "total_items": 1, "total_revenue": -27.50, "has_returns": true},
+    {"invoice_id": "DEMO-536406", "customer_id": "DEMO-12583", "country": "France", "invoice_date": "2010-12-01 11:34:00", "total_items": 14, "total_revenue": 296.85, "has_returns": false}
+  ]
+}
